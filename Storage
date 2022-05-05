@@ -1,0 +1,31 @@
+# storage microservice PDF Documents
+
+# API endpiont operation
+# logic
+# data access
+
+# modules
+import os
+
+
+# open file function
+def open_file(filePanth):
+    print('opiening ...' + filePath)
+    try:
+        newFile = open(filePath)
+    except:
+        print('confirmation', "File not found!")
+    return newFile
+
+
+# function to remove a folder
+def remove_folder():
+    # code
+
+
+fileName = input('input file name : ')
+pathSubfix = "\testFiles"
+filePath = pathSubfix + fileName + '.pdf'
+
+
+open_file(filePath)
