@@ -1,0 +1,12 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  storage_ms:
+    container_name: firma_storage_ms    
+    build: 
+      dockerfile: ./Dockerfile
+      context: .
+    volumes:
+      - ./src:/usr/src/app/src
+    ports:
+      - 8092:8000
+
